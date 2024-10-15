@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec6edc487e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="VAISHNAVI-removebg-preview.png" class="logo">
+            <ul id="sidemenu">
+                
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+
+
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>Frontend Enthusiast</p>
+            <h1>Hi, I'm <span>P Vaishnavi!</span><br></h1>
+            
+            
+        </div>
+    </div>
+</div>
+<!-----------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img4.jpg" height="500px" width="400px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p style="font-family: serif;">Hey there! I’m P Vaishnavi. I’m currently pursuing my B.Tech in Computer Science Engineering, specializing in the Internet of Things, at Hyderabad Institute of Technology and Management (HITAM). As a final-year student, I have a strong interest in technology, communication, and management.
+                    As a tech enthusiast I've explored various projects that combine my interests in IoT and web development. I'm excited to see where this journey takes me!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('projects')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web and Mobile Interfaces using Figma</li>
+                        <li><span>Frontend Development</span><br>Developing User Interfaces Using HTML & CSS</li>
+                        <li><span>App Development</span><br>Building Mobile Applications using Android Studio</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Chief Editor of Campus Talk | College Magazine of HITAM</span><br>Led a dedicated team to successfully publish the college magazine.</li>
+                        <li><span>PR of Google Developer Student Club</span><br>Coordinated and executed promotional campaigns to enhance the club’s visibility and engagement.</li>
+                        <li><span>Coordinator of Literary Intellects Club</span><br>Organized numerous events, including a Literary Fest with participants from various colleges.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>BTech in CSE (IoT) at HITAM</li>
+                        <li><span>2019-2021</span><br>Intermediate from Sri Chaitanya Junior College</li>
+                        <li><span>Passed out in 2019</span><br>Secondary Education from Kendriya Vidyalaya, University of Hyderabad</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+</div>
+<!----------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Development</h2>
+                <p>As a frontend developer, I build user-friendly websites and applications using HTML, CSS, and JavaScript, with a touch of animation to bring designs to life.</p>
+                <a href="https://github.com/pvaishnavi6941/zidio-clone" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>UI/UX & App Design</h2>
+                <p> I design clean and user-friendly interfaces for websites and mobile apps. My goal is to make sure that every interaction is easy and enjoyable for users, from the first sketch to the final design.</p>
+                <a href="https://www.figma.com/community/file/1427697270890756653" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Content Writing</h2>
+                <p>I write clear and engaging content for websites, blogs, and other marketing materials. My writing is focused on connecting with readers and delivering messages in a simple and effective way.</p>
+                <a href="https://www.instagram.com/_.youknowwhat_?utm_source=qr&igsh=MWVkY2l4a3lpeDZwcg==" target="_blank">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            
+            <div class="work">
+                <img src="work-3.png" alt="img">
+                <div class="layer">
+                    <h3>Nirvighna App</h3>
+                    <p>An app focused on waste segregation and disposal, with an added employability feature.</p>
+                    <a href="https://github.com/pvaishnavi6941/Nirvighna.git " target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="streetlight.jpg" alt="img">
+                <div class="layer">
+                    <h3>Smart Street Lights</h3>
+                    <p>An IoT-based project where an LDR sensor detects ambient light and adjusts the street light's brightness accordingly.</p>
+                    <a href="https://drive.google.com/drive/folders/17IxTXcFlQfyL-Yq1RvO1kGXzGzAOzpfk" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="work-1.png" alt="img">
+                <div class="layer">
+                    <h3>CLEANSCAPE</h3>
+                    <p>CLEANSCAPE is a web-based platform empowering individuals to tackle waste management challenges effectively.</p>
+                    <a href="a" target="_parent"><i class="fa-solid fa-link"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+<br>
+<br>
+<!--------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p id="mail"><i class="fa-solid fa-paper-plane"></i><a href="mailto:pvaishnavi300604@gmail.com">pvaishnavi300604@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i>8919860594</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vaishnavi-p-925156240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_.youknowwhat_?utm_source=qr&igsh=MWVkY2l4a3lpeDZwcg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/pvaishnavi6941" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="P_Vaishnavi.pdf" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>Copyright ©2024 All rights reserved | P Vaishnavi</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>  
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdUimXma9Gatm74_9bxOjIHjbxaNpdAyOF511B0MbQrWC20AiEynllvOF1zbA7rnhc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfuly"
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+    
+</body>
+</html>
