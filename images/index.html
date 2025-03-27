@@ -87,7 +87,7 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Frontend Development</h2>
-                <p>As a frontend developer, I build user-friendly websites and applications using HTML, CSS, and JavaScript, with a touch of animation to bring designs to life. My team and I worked on the website. Click the link to view it.</p>
+                <p>As a frontend developer, I build user-friendly websites and applications using HTML, CSS, and JavaScript. My team and I worked on the website. Click the link to view it.</p>
                 <a href="https://krhomeocare.com/" target="_blank">Learn more</a>
             </div>
             <div>
@@ -180,7 +180,39 @@
     </div>
 </div>
 
-<script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    var navLinks = document.querySelectorAll("#sidemenu a");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+    // Add event listeners to nav items to close menu and scroll
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Close the menu
+            closemenu();
+
+            // Get the target section ID
+            var targetId = this.getAttribute('href');
+            
+            // Prevent default link behavior
+            e.preventDefault();
+
+            // Scroll to the target section smoothly
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Existing tab functionality
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -195,59 +227,44 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 
-</script>  
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0"
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px"
-    }
-</script>
-<script>
+    // Google Sheet form submission
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxdUimXma9Gatm74_9bxOjIHjbxaNpdAyOF511B0MbQrWC20AiEynllvOF1zbA7rnhc/exec'
     const form = document.forms['submit-to-google-sheet']
-    const msg= document.getElementById("msg")
+    const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML= "Message sent successfuly"
-            setTimeout(function(){
-                msg.innerHTML=""
-
-            },5000)
-            form.reset()
-
-        })
-        .catch(error => console.error('Error!', error.message))
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
     })
+
+    // Type effect for name
     document.addEventListener("DOMContentLoaded", function() {
-    const text = "P Vaishnavi!";
-    const span = document.querySelector(".header-text h1 span");
-    let index = 0;
+        const text = "P Vaishnavi!";
+        const span = document.querySelector(".header-text h1 span");
+        let index = 0;
 
-    // Ensure the span is empty before starting the effect
-    span.innerHTML = "";  
+        // Ensure the span is empty before starting the effect
+        span.innerHTML = "";  
 
-    function typeEffect() {
-        if (index < text.length) {
-            span.innerHTML += text[index];
-            index++;
-            setTimeout(typeEffect, 150);
+        function typeEffect() {
+            if (index < text.length) {
+                span.innerHTML += text[index];
+                index++;
+                setTimeout(typeEffect, 150);
+            }
         }
-    }
 
-    typeEffect();
-});
+        typeEffect();
+    });
+</script>
 
-
-  </script>
-    
-    
 </body>
 </html>

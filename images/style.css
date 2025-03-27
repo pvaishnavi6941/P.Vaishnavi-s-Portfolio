@@ -442,3 +442,92 @@ nav .fa-solid{
         
     }
 }
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .about-col-1, 
+    .about-col-2 {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    .about-col-1 {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body, html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+    #header {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    nav ul {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-col-1, 
+    .about-col-2 {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    nav ul {
+        width: 200px;
+        max-width: 100%;
+        right: -200px;
+    }
+}
+
