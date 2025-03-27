@@ -142,12 +142,13 @@ nav ul li a:hover::after{
     display: block;
 }
 .about-col-1 {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 430px;
     background-image: url('img4.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 /*--------------services-------------*/
@@ -377,13 +378,22 @@ nav .fa-solid{
     #header{
         background-image: url(wp3.jpg);
     }
-    .header-text{
-        margin-top: 100%;
+    
+    .header-text {
+        margin-top: 10%;
         font-size: 16px;
+        color: white;
+        font-family: Arial, sans-serif;
     }
-    .header-text h1{
+    
+    .header-text h1 {
         font-size: 30px;
+        white-space: nowrap; /* Prevents text from breaking */
+        overflow: hidden; /* Hides overflowing text */
+        border-right: 2px solid transparent; /* Cursor effect */
+        display: inline-block;
     }
+    
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -417,6 +427,7 @@ nav .fa-solid{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        
     }
     .about-col-1{
         margin-bottom: 30px;

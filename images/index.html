@@ -30,8 +30,6 @@
         <div class="header-text">
             <p>Frontend Enthusiast</p>
             <h1>Hi, I'm <span>P Vaishnavi!</span><br></h1>
-            
-            
         </div>
     </div>
 </div>
@@ -89,8 +87,8 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Frontend Development</h2>
-                <p>As a frontend developer, I build user-friendly websites and applications using HTML, CSS, and JavaScript, with a touch of animation to bring designs to life.</p>
-                <a href="https://github.com/pvaishnavi6941/zidio-clone" target="_blank">Learn more</a>
+                <p>As a frontend developer, I build user-friendly websites and applications using HTML, CSS, and JavaScript, with a touch of animation to bring designs to life. My team and I worked on the website. Click the link to view it.</p>
+                <a href="https://krhomeocare.com/" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
@@ -228,6 +226,26 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+    document.addEventListener("DOMContentLoaded", function() {
+    const text = "P Vaishnavi!";
+    const span = document.querySelector(".header-text h1 span");
+    let index = 0;
+
+    // Ensure the span is empty before starting the effect
+    span.innerHTML = "";  
+
+    function typeEffect() {
+        if (index < text.length) {
+            span.innerHTML += text[index];
+            index++;
+            setTimeout(typeEffect, 150);
+        }
+    }
+
+    typeEffect();
+});
+
+
   </script>
     
     
